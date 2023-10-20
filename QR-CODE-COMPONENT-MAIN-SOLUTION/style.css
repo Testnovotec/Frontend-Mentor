@@ -1,0 +1,94 @@
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: lavender;
+    transition: width .5s ease-out, background-color .3s;
+}
+
+.card{
+    width: 200px;
+    height: 320px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 4px 20px 1px #5555556c;
+    border-radius: 10px;
+    transition: background .5s;
+}
+
+.card-body{
+    width: 100%;
+    height: 200px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s;
+}
+
+.card-body img{
+    width: 100px;
+    height: auto;
+}
+
+.card-footer{
+    width: 100%;
+    height: auto;
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    transition: color .3s;
+}
+
+.card-footer h3{
+    line-height: 12px;
+}
+
+.card-footer p{
+    margin-top: -10px;
+    font-size: .7rem;
+    color: grey;
+    font-weight: 400;
+    transition: color .3s;
+}
+
+@media screen and (max-width: 400px) {
+    .container{
+        width: 100%;
+        background-color: aqua;
+    }
+
+    .card{
+        background: linear-gradient(to bottom right, #666 10%, #333 80%);
+    }
+
+    .card-body{
+        background-color: #333;
+    }
+
+    .card-footer{
+        color: white;
+    }
+
+    .card-footer p{
+        color: #ccc;
+    }
+
+}
